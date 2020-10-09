@@ -42,12 +42,12 @@ variable "kubernetes_resources_labels" {
 
 variable "kubernetes_deployment_image_registry" {
   type = string
-  default = "k8s.gcr.io/cluster-autoscaler"
+  default = "k8s.gcr.io/autoscaling/cluster-autoscaler"
 }
 
 variable "kubernetes_deployment_image_tag" {
   type = string
-  default = "v1.15.1"
+  default = "v1.17.3"
 }
 
 variable "kubernetes_deployment_node_selector" {
